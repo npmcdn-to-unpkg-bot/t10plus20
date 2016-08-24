@@ -7,7 +7,8 @@ var express = require('express'),
 	bodyParser = require('body-parser'),
 	logger = require('morgan'), 
 	cookieParser = require('cookie-parser'), 
-	index = require('./routes/index');
+	index = require('./routes/index'), 
+	satan = require('./routes/satan');
 
 app.set('port', (process.env.PORT || 8080))
 app.set('views', __dirname + '/views')
@@ -36,6 +37,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(cookieParser())
 
 app.use('/', index)
+app.use('/summonthegreatdemons', satan)
 
 app.use(function(req, res, next) {
 	var err = new Error('Not found')
