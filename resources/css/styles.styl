@@ -6,12 +6,14 @@ body
 	width: 100%
 	height: 100%
 	font-size: 100%
+	line-height: 1.2em
 	background: url('../img/dungeons-and-dragons-1.jpg') black fixed
 	background-size: cover
 	background-repeat: no-repeat
 	color: white
 	position: absolute
 	font-family: 'Open Sans Condensed'
+	height: 4000px
 
 body:before {
 	background: linear-gradient(to top, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 100%);
@@ -24,8 +26,13 @@ body:before {
     z-index: -1
 }
 
-h1 
+.bold 
+	font-size: 1.2em
+
+h1, h2, h3
 	text-transform: uppercase
+
+h1 
 	display: flex
 	align-items: center
 	justify-content: center
@@ -34,8 +41,12 @@ h1
 	text-indent: -9999px;
 
 h2 
-	text-transform: uppercase
 	font-size: 3em
+	line-height: 1.6em
+	
+h3 
+	font-size: 2.4em
+	line-height: 1.4em
 
 header
 	//position: fixed
@@ -57,24 +68,20 @@ header
 	
 	@media screen and (min-width: 31.875em)
 		//width: 15%
-		
 	@media screen and (min-width: 78.125em)
 		width: 10%
 
 .logo 
 	max-width: 100%
 	min-height: 130px
-	
 	@media screen and (min-width: 31.875em)
 		max-height: 168px
 
-.event-info
+.event-intro
 	width: 75%
 	display: inline-block
-
 	@media screen and (min-width: 31.875em)
 		width: 84%
-		
 	@media screen and (min-width: 78.125em)
 		width: 89%
 
@@ -89,24 +96,27 @@ header
 	padding: 2%
 
 .main-container 
-	margin: 5% 0 0 0
+	margin: 5% 0 10% 0
  	display: flex
 	flex-flow: row nowrap
 
 .col-100 
 	width: 100%
 
-.col-60 
+.col-50 
 	width: 100%
-	
 	@media screen and (min-width: 31.875em)
-		width: 60%
-		
+		width: 50%
 	@media screen and (min-width: 78.125em)
-		width: 60%	
+		width: 50%	
 
 .group-info 
-	background: rgba(213, 76, 43, .7)
+	background: rgba(112, 76, 80, .7)
+	height: 300px
+	@media screen and (min-width: 50.3125em)
+		display: flex
+		flex-flow: row nowrap
+	
 
 
 
