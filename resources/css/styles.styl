@@ -3,14 +3,14 @@ global-reset()
 html 
 	height: 100%
 body
+	width: 100%
 	height: 100%
 	font-size: 100%
-	//background: url('http://cdn.playbuzz.com/cdn/8638382e-e024-4c14-888f-6a814c9d54ee/e45a3a5d-c3bf-491e-83a4-749372e4be56.jpg') black fixed
 	background: url('../img/dungeons-and-dragons-1.jpg') black fixed
 	background-size: cover
 	background-repeat: no-repeat
 	color: white
-	//font-family: 'Open Sans Condensed' //, sans-serif
+	position: absolute
 	font-family: 'Open Sans Condensed'
 
 body:before {
@@ -56,7 +56,7 @@ header
 	display: inline-block
 	
 	@media screen and (min-width: 31.875em)
-		width: 15%
+		//width: 15%
 		
 	@media screen and (min-width: 78.125em)
 		width: 10%
@@ -85,17 +85,28 @@ header
 	bottom: 8%
 	right: 1%
 
-main 
-	height: 1500px
-	margin: 5% 0 0 0
+.main-container, .group-info
 	padding: 2%
+
+.main-container 
+	margin: 5% 0 0 0
  	display: flex
 	flex-flow: row nowrap
 
+.col-100 
+	width: 100%
+
 .col-60 
-	width: 60%	
+	width: 100%
+	
+	@media screen and (min-width: 31.875em)
+		width: 60%
+		
+	@media screen and (min-width: 78.125em)
+		width: 60%	
 
-
+.group-info 
+	background: rgba(213, 76, 43, .7)
 
 
 
