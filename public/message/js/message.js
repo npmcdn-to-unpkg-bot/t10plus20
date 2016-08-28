@@ -85,7 +85,7 @@ var CommentForm = React.createClass({
 	render: function() {
 		return (
 			<div className="commentFormContainer">
-				<h1>Message/comment/idea bord</h1>
+				<h1>Message/comment/idea board</h1>
 				<form className="commentForm" onSubmit={this.handleSubmit}>
 					<input type="text" placeholder="What's on your mind" value={this.state.text} onChange={this.handleTextChange} />
 					<input type="text" placeholder="Name" value={this.state.author} onChange={this.handleAuthorChange} />
