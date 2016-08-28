@@ -47,7 +47,7 @@ var CommentBox = React.createClass({
 			return (
 				<div className="writeSomething">
 					<CommentForm onCommentSubmit={this.handleCommentSubmit} />
-					<pre>Be the first too write something</pre>
+					<h1>Be the first too write something!</h1>
 				</div>
 			)
 		} else {
